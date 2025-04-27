@@ -39,7 +39,7 @@
     }
     .donate {
       margin-top: 2rem;
-      width: 100%; /* Important: make .donate full width */
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -51,13 +51,17 @@
       display: flex;
       justify-content: center;
     }
-    givebutter-widget {
+    .widget-wrapper givebutter-widget {
       width: 100%;
-      max-width: 500px;
-    }
-    givebutter-widget iframe {
+      max-width: 100%;
       display: block;
       margin: 0 auto;
+    }
+    /* Fix for the iframe inside givebutter-widget */
+    .widget-wrapper iframe {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
     }
   </style>
 </head>
