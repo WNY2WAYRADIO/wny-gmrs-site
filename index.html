@@ -1,17 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Western New York GMRS Repeaters</title>
-<script>
-  window.onload = function() {
-    var script = document.createElement('script');
-    script.src = 'https://widgets.givebutter.com/latest.umd.cjs?acct=gGy2Yr40nTl0ms16&p=other';
-    document.head.appendChild(script);
-  };
-</script>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://widgets.givebutter.com; object-src 'none';">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -47,7 +40,6 @@
       left: 0;
     }
   </style>
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://widgets.givebutter.com; object-src 'none';">
 </head>
 <body>
 
@@ -62,8 +54,14 @@
   
   <div class="donate">
     <h2>Support Our Repeaters</h2>
-    <!-- Widget code (replace your_widget_id_here with the actual ID from Givebutter) -->
-    <div data-givebutter-id="pE6oqj"></div>
+    <!-- Embed widget as iframe -->
+    <iframe 
+      src="https://givebutter.com/pE6oqj" 
+      width="100%" 
+      height="500" 
+      style="border:none; overflow:hidden;" 
+      scrolling="no">
+    </iframe>
   </div>
 </section>
 
